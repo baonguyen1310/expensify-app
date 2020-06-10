@@ -12,7 +12,6 @@ import './styles/styles.scss'
 
 const store = configureStore();
 
-//add Expense
 store.dispatch(addExpense({description : 'Water Bill',amount : 300}));
 store.dispatch(addExpense({description : 'Gas Bill',amount : 200,createdAt:100}));
 store.dispatch(addExpense({description : 'Rent',amount : 500}));
