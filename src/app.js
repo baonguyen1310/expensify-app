@@ -8,18 +8,14 @@ import { addExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getExpenseVisible from './selectors/expenses';
 import './styles/styles.scss'
-
+import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
 
 store.dispatch(addExpense({description : 'Water Bill',amount : 300}));
 store.dispatch(addExpense({description : 'Gas Bill',amount : 200,createdAt:100}));
 store.dispatch(addExpense({description : 'Rent',amount : 500}));
-//set text filter
-// store.dispatch(setTextFilter('water'));
-// setTimeout(()=>{
-//     store.dispatch(setTextFilter('rent')); 
-// },300)
+
 var state = store.getState();
 var visibleExpense = getExpenseVisible(state.expenses,state.filters);
 
