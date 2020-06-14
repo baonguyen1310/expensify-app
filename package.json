@@ -5,7 +5,6 @@
     "author": "BaoNguyen",
     "license": "MIT",
     "scripts": {
-        "serve": "live-server public/",
         "build:dev": "webpack",
         "build:prod": "webpack -p --env production",
         "dev-server": "webpack-dev-server",
@@ -42,7 +41,9 @@
         "uuid": "^8.1.0",
         "validator": "^13.0.0",
         "webpack": "^4.43.0",
-        "webpack-cli": "^3.3.11",
+        "webpack-cli": "^3.3.11"
+    },
+    "devDependencies": {
         "webpack-dev-server": "^3.11.0"
     }
 }
