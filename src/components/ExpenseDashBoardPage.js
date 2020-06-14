@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from  'react-dom';
 import ExpenseList from './ExpenseList'
+import ExpenseSummary  from './ExpenseSummary';
 const ExpenseDashBoardPage = () => (
     <div>
-        <p>This is HomePage.</p>
-        { <ExpenseList></ExpenseList> }
+        <ExpenseSummary></ExpenseSummary>
+        
+        <ExpenseList></ExpenseList>
     </div>
 )
 
